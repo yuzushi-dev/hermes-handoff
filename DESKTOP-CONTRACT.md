@@ -1,7 +1,7 @@
 # Desktop opening contract — Hermes Handoff 0.3 candidate
 
-Public-source context: source available for review/development; plugin release and
-catalog listing pending. The isolation recipes and delivery notes below describe
+Distribution context: v0.3.0 is distributed through GitHub Releases;
+catalog listing remains pending. The isolation recipes and delivery notes below describe
 historical private verification. Their smoke scripts, test helpers and artifacts
 are not shipped in this native source repository. Do not substitute an active
 user Desktop for the required isolated harness.

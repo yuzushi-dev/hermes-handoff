@@ -1,7 +1,7 @@
 # QUALITY-PARITY — Hermes Handoff
 
-Public-source context: source available for review/development; plugin release and
-catalog listing pending. Native-candidate local review passed. The engineering
+Distribution context: v0.3.0 is distributed through GitHub Releases;
+catalog listing remains pending. Native-candidate local review passed. The engineering
 results below are retained history, not new certification or current approval.
 All artifact/workspace/script/test references describe the separate private
 development checkout and retained evidence, not files available in this repository.

@@ -1,9 +1,9 @@
 # HANDOFF — Hermes Handoff
 
-Public-source context: this repository is available for review/development; the
-plugin release and catalog listing are pending. The notes below are historical
+Distribution context: v0.3.0 is distributed through GitHub Releases;
+catalog listing remains pending. The notes below are historical
 private development records, not current authorizations or runnable instructions
-for this 27-file repository. Their `artifacts/`, workspace, test and script paths
+for this 28-file repository. Their `artifacts/`, workspace, test and script paths
 refer to separately retained private evidence/helpers, not files shipped here.
 Local review of the native candidate passed; source availability is not installation.
 

@@ -2,13 +2,13 @@
 
 <p align="center">
   <a href="assets/hermes-handoff-promo.mp4">
-    <img src="assets/hermes-handoff-card.png" width="960" alt="Hermes Handoff: a semantic handoff between two sessions in the same profile; the source stays open.">
+    <img src="assets/hermes-handoff-promo.gif" width="960" alt="Hermes Handoff animated workflow: a semantic handoff between two sessions in the same profile; the source stays open.">
   </a>
 </p>
 
 Hermes Handoff is a native Hermes plugin for preparing a semantic handoff and opening a new CLI or Desktop session in the originating profile. The source stays open; the destination reads the handoff and is instructed to wait for your confirmation before starting work.
 
-Independent community project, not an official Nous Research release. This source repository is available for review and development; the version 0.3.0 plugin release and catalog listing are pending. Source availability does not imply installation or certification. The linked 26-second video is a synthetic workflow illustration, not a live demonstration. [Video poster](assets/hermes-handoff-promo.jpg) · [Text alternative](assets/accessibility.md).
+Independent community project, not an official Nous Research release. Version 0.3.0 is distributed through [GitHub Releases](https://github.com/yuzushi-dev/hermes-handoff/releases/tag/v0.3.0); catalog listing remains pending. A GitHub release does not imply installation, certification or catalog acceptance. The animated preview and linked 26-second video are synthetic workflow illustrations, not live demonstrations. [Video poster](assets/hermes-handoff-promo.jpg) · [Text alternative](assets/accessibility.md).
 
 ## What it does
 
@@ -18,9 +18,9 @@ Choose the destination model/provider (A) independently of an optional summary w
 
 ## Source checkout and local installation boundary
 
-This repository contains only the 27 native files from the reviewed candidate, with publication documentation updates. It contains no `package.json`, npm scripts, upstream launchers, telemetry, credentials, transcripts, tests or packaging scripts. Do not run `npm install` or upstream session-handoff setup: that separate project's legacy npm package includes a telemetry postinstall and is not the Hermes plugin.
+This repository contains 28 native files, including the animated preview, with publication documentation updates. It contains no `package.json`, npm scripts, upstream launchers, telemetry, credentials, transcripts, tests or packaging scripts. Do not run `npm install` or upstream session-handoff setup: that separate project's legacy npm package includes a telemetry postinstall and is not the Hermes plugin.
 
-No downloadable plugin release or catalog installation is offered yet. For explicitly authorized local development only, inspect the exact revision and native files, then copy those files (not `.git` or private verification artifacts) into `plugins/hermes-handoff` under your explicitly selected Hermes home and enable it through Hermes' plugin consent flow. No installation into a real user profile is part of candidate verification. Historical build/test commands in the retained engineering notes refer to a separate private development checkout; their helpers and evidence are not shipped here.
+Download `hermes-handoff-0.3.0.tar.gz` and `MANIFEST.json` from the GitHub release. Check the archive SHA-256 and every member against the manifest before extraction. For an explicitly authorized local installation, inspect the files, then copy only the extracted `hermes-handoff/` directory into `plugins/hermes-handoff` under your explicitly selected Hermes home and enable it through Hermes' plugin consent flow. No catalog installation is offered yet, and no real-profile installation is part of the recorded verification. Historical build/test commands in the retained engineering notes refer to a separate private development checkout; their helpers and evidence are not shipped here.
 
 ## Main workflows
 
@@ -97,4 +97,4 @@ Desktop reruns require the user/PID namespace and private process table specifie
 
 Fork of [session-handoff](https://github.com/yuzushi-dev/session-handoff), MIT License, Copyright (c) 2026 Daniele Verì. The native package retains the [license](LICENSE). The [archived upstream README](docs/UPSTREAM-README-session-handoff.md) documents the original Claude Code/Codex product, not installation or capabilities of this Hermes plugin.
 
-The cover and video use original community artwork, not official logos or copied Nous/SEO pixels. The owner approved MIT licensing for the project's original images/video and accepted the graphics/video. Original software copyright/license and third-party licenses/attributions are unchanged. See [media credits and rights](assets/media-credits.md). Editable media sources and their dependency-license notices are retained separately, not shipped in this native source repository. Source publication is separate from the pending plugin release and catalog listing.
+The cover and video use original community artwork, not official logos or copied Nous/SEO pixels. The owner approved MIT licensing for the project's original images/video and accepted the graphics/video. Original software copyright/license and third-party licenses/attributions are unchanged. See [media credits and rights](assets/media-credits.md). Editable media sources and their dependency-license notices are retained separately, not shipped in this native source repository. The GitHub release is separate from the pending catalog listing.

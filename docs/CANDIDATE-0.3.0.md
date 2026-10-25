@@ -1,6 +1,6 @@
 # Hermes Handoff 0.3.0 — candidate readiness
 
-Status: source repository available for review and development; plugin release and catalog listing pending. The native candidate passed independent local review; that is not plugin release, installation or catalog approval. Command outputs, archive/member hashes and delivery reports are separately retained private evidence, not files or accessible evidence links in this source repository. All `artifacts/` references and execution results below describe that private development history; they are not instructions to find those files here. Earlier candidate2 results remain explicitly historical.
+Status: v0.3.0 is distributed through GitHub Releases; catalog listing remains pending. The native candidate passed independent local review; a GitHub release is not installation, broad compatibility certification or catalog approval. Command outputs, archive/member hashes and delivery reports are separately retained private evidence, not files or accessible evidence links in this source repository. All `artifacts/` references and execution results below describe that private development history; they are not instructions to find those files here. Earlier candidate2 results remain explicitly historical.
 
 ## Scope and distribution
 
@@ -8,7 +8,7 @@ Status: source repository available for review and development; plugin release a
 - Explicit regular-file packaging allowlist. README and its final media/rights/text alternative travel together.
 - No source npm package installation, upstream postinstall/telemetry/setup, self-updater, core patch or credential store is included.
 - Original session-handoff MIT license and copyright are retained. The archived upstream README describes the original product only; its historical relative links refer to that upstream checkout.
-- Original cover/poster/video use the same engraved technical design. Editable brag/Hyperframes sources, font/GSAP licenses and QC are retained in the media deliverable, outside this source repository. The owner explicitly authorized MIT for the project's original images and video and approved the graphics and video. See [media credits](../assets/media-credits.md); original software copyright/license and third-party licenses/attributions are unchanged. Source publication does not authorize a plugin release or catalog submission.
+- Original cover/poster/video use the same engraved technical design. Editable brag/Hyperframes sources, font/GSAP licenses and QC are retained in the media deliverable, outside this source repository. The owner explicitly authorized MIT for the project's original images and video and approved the graphics and video. See [media credits](../assets/media-credits.md); original software copyright/license and third-party licenses/attributions are unchanged. The GitHub release does not authorize catalog submission or installation into a real profile.
 
 ## Approval boundary and runtime coupling
 
@@ -67,8 +67,8 @@ A historical non-submittable catalog template is retained only with the private 
 ## Remaining owner / maintainer gates
 
 - Independent local review of the native candidate passed; public-source preparation is checked separately. No additional runtime/media certification is implied.
-- Only source repository publication is in scope. Plugin release, release assets, tags, catalog submission and real-profile installation remain pending. MIT for original images/video and aesthetic acceptance were approved; third-party licenses/attributions remain unchanged.
-- Validate the exact public source revision before relying on it; future catalog pins and any plugin release require their own approval.
+- The first GitHub release v0.3.0, its tag and 28-file distribution are authorized separately from catalog submission and real-profile installation, which remain pending. MIT for original images/video and aesthetic acceptance were approved; third-party licenses/attributions remain unchanged.
+- Validate the exact public source revision and release manifest before relying on them; future catalog pins require their own approval.
 - Runtime private-import disclosure/API seam and successful dependency preparation against the final immutable target; warnings are not approval and do not replace the dependency gate.
 - Apply the pinned concordant admission policy; screenshots and all risk disclosures in a separately authorized catalog PR, followed by maintainer review.
-- Source availability does not imply a real-profile installation, live/paid inference, plugin release, release asset upload, tag, catalog submission or deployment.
+- GitHub release availability does not imply a real-profile installation, live/paid inference, catalog submission, maintainer acceptance or deployment.
