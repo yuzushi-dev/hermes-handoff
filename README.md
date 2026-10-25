@@ -73,6 +73,8 @@ Opening passes no broader toolset override, enables no tools and rewrites no pro
 
 The optional external writer sends bounded, already-redacted persisted evidence through the configured host provider, not full context or a raw transcript. Early goals, compressed details and in-flight state may be missing. Review the returned state: redaction cannot detect every secret. The route observer stores session/model/provider identifiers, not request payloads. The plugin reads source-session evidence from the profile database and project/Git evidence from the selected workspace; handoffs and opening/writer sidecars remain under the originating profile. Inspect them before sharing.
 
+Workspace identification runs local `git -C <workspace> rev-parse --path-format=absolute --git-common-dir` without a shell, with a 3-second timeout. Opening preflight also reads the originating profile's host configuration through Hermes' `load_config()` to check effective tool policy; it does not rewrite that configuration.
+
 The terminal opener spawns foreground Hermes without a shell; Desktop requests host-owned session creation and submission. The plugin does not start a persistent background service, collect telemetry or store provider credentials. Provider access and credential management remain host-owned.
 
 The destination is instructed to read and validate the exact handoff, inspect actual project rules and files, summarize discrepancies and a first step, then wait for explicit confirmation. This is a model instruction, not a sandbox or a guarantee of obedience.

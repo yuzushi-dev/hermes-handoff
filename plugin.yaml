@@ -4,6 +4,7 @@ kind: standalone
 description: "Hermes Handoff — private semantic handoffs, CLI/Desktop opening and independent destination/writer models. No migration."
 author: yuzushi-dev
 license: MIT
+requires_hermes: ">=0.22.5"
 provides_tools:
   - hermes_handoff
 provides_hooks:
