@@ -51,7 +51,7 @@ The focused chat's profile and connection must match the active backend. Cross-p
 
 ## Compatibility and limits
 
-The test target is Linux with installed Hermes Agent 0.22.2 (`d923a5eb`). Other platforms and versions are not certified; no minimum compatible version is inferred. Real Desktop evidence is limited to a synthetic default profile; named-profile SDK stubs do not establish real bot support.
+The historical functional test target is Linux with installed Hermes Agent 0.22.2 (`d923a5eb`). On 2026-10-25, the official stable Hermes Agent v0.22.5 passed admission validation with `hermes plugins validate --install-deps --json`: 16/16 checks passed, `safe: true`, and stderr was empty. v0.22.5 is therefore the conservative admission-tested floor, not proof of the earliest compatible release or full CLI/Desktop certification. Other platforms and versions are not certified. Real Desktop evidence is limited to a synthetic default profile; named-profile SDK stubs do not establish real bot support.
 
 Four runtime-internal imports remain: `coding_selection`, `resolve_toolset`, `_get_platform_tools` and `parse_config_string_list`. No equivalent public plugin API for the complete effective tool policy was found in the tested runtime. The candidate preserves fail-closed preflight rather than widening tool access. Validator warnings and runtime coupling must be disclosed to catalog maintainers; this is not a public-API-only compatibility claim.
 

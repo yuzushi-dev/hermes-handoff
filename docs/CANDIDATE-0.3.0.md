@@ -18,6 +18,8 @@ Preflight still imports `agent.coding_context.coding_selection`, `toolsets.resol
 
 Test target: installed Linux Hermes 0.22.2, source `d923a5eb48`. Other runtimes/platforms and real cross-profile/bot workflows are not certified. The manifest intentionally makes no unverified `requires_hermes` floor claim; the installed schema supports that field, but a tested version is not proof of the earliest compatible release.
 
+2026-10-25 admission addendum: this supersedes the no-floor statement above for catalog admission only. Official stable Hermes Agent v0.22.5 passed `hermes plugins validate --install-deps --json` with 16/16 checks, `safe: true` and empty stderr, establishing v0.22.5 as a conservative admission-tested floor. It does not identify the earliest compatible release or certify full CLI/Desktop runtime behavior; the 0.22.2 functional test record remains historical evidence. The code owner accepted the four disclosed runtime-internal imports for this catalog admission. Keep the warning and seek a public policy-inspection API or maintainer re-review before any future compatibility change; this ruling does not make those APIs stable.
+
 ## Required local checks
 
 1. RED→GREEN approval-environment tests for both inherited flags, default/explicit-A CLI paths, preserved profile config and normal policy.
