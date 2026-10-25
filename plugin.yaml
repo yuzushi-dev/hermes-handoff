@@ -1,0 +1,13 @@
+name: hermes-handoff
+version: 0.3.0
+kind: standalone
+description: "Hermes Handoff — private semantic handoffs, CLI/Desktop opening and independent destination/writer models. No migration."
+author: yuzushi-dev
+license: MIT
+provides_tools:
+  - hermes_handoff
+provides_hooks:
+  - pre_api_request
+capabilities:
+  - llm.model_override
+  - llm.provider_override
