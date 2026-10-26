@@ -292,9 +292,9 @@ class HandoffOpening:
             tty = sys.stdin.isatty() and sys.stdout.isatty()
         value = self.claim(attempt_id, workspace, tty=tty)
         if value.get("duplicate"):
-            print("Hermes Handoff: apertura gia' richiesta "
-                  f"(tentativo {value['attempt_id']}, stato {value['status']}). Nessuna nuova sessione avviata. "
-                  "Per riprendere manualmente: nuova sessione nello stesso profilo, poi "
+            print("Hermes Handoff: opening already requested "
+                  f"(attempt {value['attempt_id']}, status {value['status']}). No new session started. "
+                  "To resume manually: start a new session in the same profile, then "
                   f"hermes_handoff action=read ref={value['ref']}", flush=True)
             return self.DUPLICATE_EXIT
         child_env = os.environ.copy()
@@ -320,7 +320,7 @@ class HandoffOpening:
                    "chat", "--cli", "--in", value["workspace"],
                    "--model", value["model"], "--provider", value["provider"],
                    "--skills", "hermes-handoff:handoff", "--query", self.prompt(value)]
-        print("avvio richiesto; origine lasciata aperta", flush=True)
+        print("launch requested; origin left open", flush=True)
         # No shell and no resume/continue/new: foreground inherits the user's TTY.
         try:
             code = (runner or subprocess.run)(command, cwd=value["workspace"], env=child_env, check=False).returncode
